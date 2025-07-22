@@ -8,6 +8,21 @@
     }
 
     .clock_frame {
-        @apply flex justify-evenly items-center m-2 h-[100px] w-[85%] bg-white rounded-md text-white sm:w-[80%] flex-wrap;
+        @apply flex justify-evenly items-center m-2 h-[100px] w-[85%] bg-white rounded-md sm:w-[80%] flex-wrap;
     }
+}
+
+
+.backgruond_image{
+
+    background-image:url("./images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.parent_bg{
+        background-image:url("./images/pexels-googledeepmind-17485657.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
