@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@layer utilities {
+
+    .time_box {
+        @apply w-25 h-19 rounded-md flex justify-center items-center;
+    }
+
+    .span_design {
+        @apply mb-15 text-2xl font-bold font-serif text-amber-300 tracking-wide drop-shadow-lg italic underline decoration-wavy decoration-amber-400 animate-pulse;
+    }
+}
