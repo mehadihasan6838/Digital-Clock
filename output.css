@@ -173,8 +173,8 @@
   }
 }
 @layer utilities {
-  .ml-\[2px\] {
-    margin-left: 2px;
+  .m-2 {
+    margin: calc(var(--spacing) * 2);
   }
   .flex {
     display: flex;
@@ -182,20 +182,14 @@
   .table {
     display: table;
   }
-  .h-\[100px\] {
-    height: 100px;
-  }
   .h-\[100vh\] {
     height: 100vh;
   }
   .h-\[600px\] {
     height: 600px;
   }
-  .w-\[80\%\] {
-    width: 80%;
-  }
-  .w-\[400px\] {
-    width: 400px;
+  .w-\[90\%\] {
+    width: 90%;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -206,14 +200,14 @@
   .flex-col {
     flex-direction: column;
   }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
   .items-center {
     align-items: center;
   }
   .justify-center {
     justify-content: center;
-  }
-  .justify-evenly {
-    justify-content: space-evenly;
   }
   .rounded-md {
     border-radius: var(--radius-md);
@@ -237,9 +231,6 @@
   .bg-white {
     background-color: var(--color-white);
   }
-  .text-white {
-    color: var(--color-white);
-  }
   .underline {
     text-decoration-line: underline;
   }
@@ -250,18 +241,37 @@
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
+  .sm\:text-\[14px\] {
+    @media (width >= 40rem) {
+      font-size: 14px;
+    }
+  }
+  .md\:w-170 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 170);
+    }
+  }
+  .md\:w-\[170\] {
+    @media (width >= 48rem) {
+      width: 170;
+    }
+  }
 }
 @layer utilities {
   .time_box {
     display: flex;
     height: calc(var(--spacing) * 19);
-    width: calc(var(--spacing) * 25);
+    width: calc(var(--spacing) * 20);
     align-items: center;
     justify-content: center;
     border-radius: var(--radius-md);
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 30);
+    }
   }
   .span_design {
     margin-bottom: calc(var(--spacing) * 15);
+    margin-left: calc(var(--spacing) * 8);
     animation: var(--animate-pulse);
     font-family: var(--font-serif);
     font-size: var(--text-2xl);
@@ -278,6 +288,27 @@
     --tw-drop-shadow-size: drop-shadow(0 4px 4px var(--tw-drop-shadow-color, rgb(0 0 0 / 0.15)));
     --tw-drop-shadow: drop-shadow(var(--drop-shadow-lg));
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+    @media (width >= 48rem) {
+      margin-left: calc(var(--spacing) * 0);
+    }
+  }
+  .clock_frame {
+    margin: calc(var(--spacing) * 2);
+    display: flex;
+    height: 100px;
+    width: 85%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: var(--radius-md);
+    background-color: var(--color-white);
+    color: var(--color-white);
+    @media (width >= 40rem) {
+      width: 80%;
+    }
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 110);
+    }
   }
 }
 @property --tw-border-style {
