@@ -7,7 +7,7 @@
     }
 
     .span_design {
-        @apply mb-15 text-2xl ml-8 font-bold font-serif text-amber-300 tracking-wide drop-shadow-lg italic underline decoration-wavy decoration-amber-400 animate-pulse md:ml-0;
+        @apply mb-15 text-2xl font-bold font-serif text-amber-300 tracking-wide drop-shadow-lg italic underline decoration-wavy decoration-amber-400 animate-pulse ;
     }
 
     .clock_frame{
