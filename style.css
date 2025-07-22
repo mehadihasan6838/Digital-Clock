@@ -1,22 +1,13 @@
-@import "tailwindcss";
-
 @layer utilities {
-
     .time_box {
-        @apply w-20 h-19 rounded-md flex justify-center items-center md:w-30;
+        @apply w-20 h-20 rounded-md flex justify-center items-center; /* h-20 instead of h-19 */
     }
 
     .span_design {
-        @apply mb-15 text-2xl font-bold font-serif text-amber-300 tracking-wide drop-shadow-lg italic underline decoration-wavy decoration-amber-400 animate-pulse ;
+        @apply mb-6 text-2xl font-bold font-serif text-amber-300 tracking-wide drop-shadow-lg italic underline decoration-wavy decoration-amber-400 animate-pulse;
     }
 
-    .clock_frame{
-
-        @apply flex justify-evenly items-center m-2 h-[100px] w-[85%] bg-white rounded-md text-white sm:w-[80%] flex-wrap md:w-110;
+    .clock_frame {
+        @apply flex justify-evenly items-center m-2 h-[100px] w-[85%] bg-white rounded-md text-white sm:w-[80%] flex-wrap;
     }
-
-    /* .parent_div{
-
-        @apply flex  flex-col justify-center items-center h-[600px]  w-[80%] bg-gray-400 rounded-md ;
-    } */
 }
